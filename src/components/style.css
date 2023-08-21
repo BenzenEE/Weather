@@ -1,0 +1,109 @@
+.search {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.weather-night{
+    margin: auto;
+    width: 500px;
+    height: 620px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    background-image: url("../assets/night-sky.gif");
+}
+
+.weather-day{
+    margin: auto;
+    width: 500px;
+    height: 620px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    background-image: url("../assets/sky.webp");
+}
+
+.weather-details {
+    margin: auto;
+}
+
+.details {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 0px 0px 30px;
+}
+
+.data {
+    margin: 5px;
+    width: 150px;
+    height: 85px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 25px;
+    background-color: transparent;
+}
+
+.data-title {
+    margin: 1px;
+    font-family: 'Merienda';
+    background: -webkit-linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+    background: -moz-linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+    background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.data-details {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 4px;
+    color: rgb(95, 110, 130);
+    font-family: 'Merienda';
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.extra {
+    margin: 5px 0px 2px 50px;
+    height: 60px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(208, 237, 237);
+}
+
+.status {
+    text-align: center;
+    font-size: 18px;
+    margin: 0px;
+    font-weight: bold;
+    font-family: 'Merienda';
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 78%, #05C1FF 100%, #FFFF00 100%, #FF0000 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 78%, #05C1FF 100%, #FFFF00 100%, #FF0000 100%);
+    background: radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 78%, #05C1FF 100%, #FFFF00 100%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Merienda';
+    background: -webkit-repeating-radial-gradient(ellipse farthest-corner at center center, #000000 27%, #4DFFED 31%);
+    background: -moz-repeating-radial-gradient(ellipse farthest-corner at center center, #000000 27%, #4DFFED 31%);
+    background: repeating-radial-gradient(ellipse farthest-corner at center center, #000000 27%, #4DFFED 31%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
