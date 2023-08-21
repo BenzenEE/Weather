@@ -7,7 +7,6 @@ import { BiSearchAlt } from "react-icons/bi";
 
 export const Info = createContext();
 export default function Form() {
-  const api_key = "6f7f54260241bac7396c2f2a6a5bc81f";
   const apiKey = "d652b59465ba4678bdd151433232008";
   const [place, setPlace] = useState("chandannagar");
   const [data, setData] = useState({});
@@ -15,7 +14,6 @@ export default function Form() {
   useEffect(() => {
     axios
       .get(
-        // `https://api.openweathermap.org/data/2.5/weather?q=${place}&callback=test&appid=${api_key}`
         `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${place}&aqi=no`
       )
       .then((res) => {
@@ -33,7 +31,6 @@ export default function Form() {
     console.log(place);
     await axios
       .get(
-        // `https://api.openweathermap.org/data/2.5/weather?q=${place}&callback=test&appid=${api_key}`
         `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${place}&aqi=no`
       )
       .then((res) => {
