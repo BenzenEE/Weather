@@ -17,7 +17,7 @@ export default function Form() {
         `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${place}&aqi=no`
       )
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => alert("Please enter valid location"));
@@ -28,13 +28,13 @@ export default function Form() {
   };
 
   const handleSubmit = async () => {
-    console.log(place);
+    // console.log(place);
     await axios
       .get(
         `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${place}&aqi=no`
       )
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       })
       .catch((err) => alert("Please enter valid location"));
@@ -76,7 +76,7 @@ export default function Form() {
           <BiSearchAlt style={{ width: "40px", height: "45px" }} />
         </button>
       </div>
-      {console.log("hi " + data.length + " " + data.current)}
+      {/* {console.log("hi " + data.length + " " + data.current)} */}
       {data.current !== undefined ? (
         data.current.is_day === 1 ? (
           <div className="weather-day">
