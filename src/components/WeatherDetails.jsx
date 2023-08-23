@@ -41,7 +41,8 @@ export default function WeatherDetails({ data }) {
     data.current.condition.code === 1183 ||
     data.current.condition.code === 1186 ||
     data.current.condition.code === 1189 ||
-    data.current.condition.code === 1240
+    data.current.condition.code === 1240 ||
+    data.current.condition.code === 1180
   ) {
     icon = light_rain;
   } else if (
